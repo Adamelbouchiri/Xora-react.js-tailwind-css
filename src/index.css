@@ -4,6 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #080d27; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3c52d9; 
+  border-radius: 6px; 
+  border: 3px solid #080d27; 
+}
+
+/* For Firefox */
+html {
+  scrollbar-color: #3c52d9 #080d27; 
+  scrollbar-width: thin; 
+}
+
+
 @layer base {
   html {
     @apply bg-s1;
